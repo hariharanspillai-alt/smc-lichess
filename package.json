@@ -1,0 +1,41 @@
+{
+  "name": "smc-lichess-tournament-creator",
+  "version": "1.0.0",
+  "description": "CLI tool for automatically creating SMC Chess Club weekly Swiss tournaments on Lichess",
+  "main": "src/cli.py",
+  "scripts": {
+    "create:smc": "python smc_tournaments.py",
+    "create": "python -m src.cli",
+    "create:week": "python -m src.cli week",
+    "create:saturday": "python -m src.cli create --day saturday",
+    "create:sunday": "python -m src.cli create --day sunday",
+    "status": "python -m src.cli status",
+    "sequence": "python -m src.cli sequence",
+    "show": "python -m src.cli show",
+    "test": "python -m pytest tests/ -v",
+    "lint": "python -m flake8 src/ tests/ --max-line-length=100",
+    "install": "pip install -r requirements.txt",
+    "install-dev": "pip install -r requirements.txt pytest flake8"
+  },
+  "keywords": [
+    "lichess",
+    "chess",
+    "tournament",
+    "swiss",
+    "cli"
+  ],
+  "author": "SMC Chess Club",
+  "license": "MIT",
+  "bin": {
+    "smc-create": "./src/cli.py"
+  },
+  "preferGlobal": true,
+  "files": [
+    "src/",
+    "*.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smc-chess/tournament-creator.git"
+  }
+}

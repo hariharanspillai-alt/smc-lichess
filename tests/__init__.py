@@ -1,0 +1,1 @@
+"""Tests for SMC Lichess Tournament Creator."""
