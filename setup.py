@@ -17,7 +17,7 @@ setup(
     description="CLI tool for automatically creating SMC Chess Club weekly Swiss tournaments on Lichess",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/smc-chess/tournament-creator",
+    url="https://github.com/hariharanspillai-alt/smc-lichess",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
